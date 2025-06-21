@@ -148,8 +148,67 @@ function loadRecommendationCards() {
     })
     .catch(err => console.error("Error loading recommendation cards:", err));
 }
+function loadContactCards() {
+  fetch('./html/contact-card.html')
+    .then(res => res.text())
+    .then(template => {
+      const container = document.getElementById('contact-cards-wrapper');
+      const contactData = [
+        {
+          icon: "assets/contactimg1.png",
+          items: [
+            { label: "Country", value: "Bangladesh" },
+            { label: "City", value: "Dhaka" },
+            { label: "Streat", value: "35 Vhatara Badda" }
+          ]
+        },
+        {
+          icon: "assets/contactimg3.png",
+          items: [
+            { label: "Email", value: "YourEmail@Gmail.Com" },
+            { label: "Skype", value: "@Yourusername" },
+            { label: "Telegram", value: "@Yourusername" },
+          ]
+        },
+        {
+          icon: "assets/contactimg2.png",
+          items: [
+            { label: "Support Services", value: "15369" },
+            { label: "Office", value: "+58 (021)356 587 235" },
+            { label: "Personal", value: "+58 (021)356 587 235" },
+          ]
+        }
+      ];
+
+      contactData.forEach(data => {
+        const temp = document.createElement('div');
+        temp.innerHTML = template;
+        const card = temp.firstElementChild;
+
+        card.querySelector('.card-icon').src = data.icon;
+
+        const items = card.querySelectorAll('.contact-item');
+        data.items.forEach((item, index) => {
+          const itemElement = items[index];
+          if (itemElement) {
+            itemElement.querySelector('.label').textContent = item.label + ':';
+            itemElement.querySelector('.value').textContent = item.value;
+          }
+        });
+
+        container.appendChild(card);
+      });
+    })
+    .catch(err => console.error("Error loading contact cards:", err));
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   loadProjectCards();
   loadRecommendationCards();
+  loadContactCards();
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    console.log('Form submitted successfully!');
+  });
 });

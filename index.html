@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,7 +43,6 @@
         </div>
     </section>
 
-    </section>
     <div class="project-section">
         <h2>Projects</h2>
         <p class="projects-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
@@ -57,11 +57,39 @@
         <div class="recommendations-container" id="recommendation-cards"></div>
     </section>
 
+    <section id="contact" class="contact-section">
+        <div id="contact-form">
+            <h2>Leave ME Your Info</h2>
+            <div class="form-container">
+                <form id="contactForm" class="contact-form">
+                    <label for="name">Your Full Name (Required)</label>
+                    <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]+">
+
+                    <label for="email">Your Email (Required)</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required pattern="[a-zA-Z\s]+">
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" maxlength="500" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="contact-information">
+            <h2>Contact Information</h2>
+            <div id="contact-cards-wrapper" class="contact-cards-wrapper flex">
+            </div>
+        </div>
+    </section>
+
     <!-- jQuery and Slick Slider JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="index.js"></script>
-    <script src="./js/script.js"></script>
 </body>
 
 </html>
