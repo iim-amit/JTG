@@ -1,0 +1,123 @@
+ .contact-section {
+     display: flex;
+     gap: 1.5rem;
+     max-width: 80vw;
+     margin: 0 auto;
+     margin-top: 4rem;
+     margin-bottom: 3.5rem;
+ }
+
+ .contact-cards-wrapper {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+ }
+
+ .card-icon {
+     height: 2.5rem;
+     width: 2.5rem;
+     border-radius: 50%;
+     background: #FFB400;
+     padding: 0.5rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .card-icon img {
+     object-fit: cover;
+ }
+
+ #contact-form {
+     border-radius: 10px;
+     flex: 5;
+ }
+
+ .form-container {
+     background-color: #fff !important;
+     padding: 1.5rem 2rem;
+ }
+
+ #contact-form h2 {
+     margin-bottom: 20px;
+     font-size: 2rem;
+     font-weight: 700;
+     letter-spacing: 0%;
+ }
+
+ #contactForm label {
+     display: block;
+     color: #767676;
+     margin: 10px 0 5px;
+     font-size: 18px;
+     font-weight: 500;
+ }
+
+ #contactForm input,
+ #contactForm textarea {
+     width: 100%;
+     padding: 10px;
+     background: #F0F0F6;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     margin-bottom: 15px;
+ }
+
+ #contactForm textarea {
+     height: 206px;
+     resize: none;
+ }
+
+ #contactForm button {
+     background: #ffc107;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     text-transform: uppercase;
+     cursor: pointer;
+     font-weight: 600;
+     font-size: 14px;
+ }
+
+ #contactForm button:hover {
+     background: #e0a800;
+ }
+
+ /* Contact Card Styles */
+ #contact-information {
+     border-radius: 10px;
+     flex: 2;
+ }
+
+ #contact-information h2 {
+     margin-bottom: 20px;
+     font-size: 2rem;
+     font-weight: 700;
+ }
+
+ .contact-card {
+     background: #fff;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 20px;
+     width: 23rem;
+     text-align: center;
+ }
+
+ .contact-item {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 6px 0;
+     color: #767676;
+ }
+
+ .contact-item strong {
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 125%;
+ }
+
+ .contact-item span {
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 1.5rem;
+ }

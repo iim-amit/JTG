@@ -1,9 +1,15 @@
 @import url(./project-card.css);
-*{
-    background-color: #F0F0F6;
+@import url(./recommendation-card.css);
+@import url(./contact-card.css);
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F6;
 }
 
 .card-tags {
@@ -26,27 +32,28 @@
     height: 100%;
     width: 100%;
     position: relative;
-    padding-top: 10vh; 
+    padding-top: 10vh;
 }
 
 .nav {
-    position: fixed;      
+    position: fixed;
     top: 0;
     left: 0;
-    height: 10vh;          
+    height: 10vh;
     width: 100%;
     border-bottom: 2px solid #dadada;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4vw;
-    background-color: white; 
-    z-index: 1000;      
-    overflow-x: auto;  
+    background-color: white;
+    z-index: 1000;
+    overflow-x: auto;
 }
-.nav-logo img{
+
+.nav-logo img {
     height: 80%;
-    width: 9+0%;
+    width: 90%;
     padding: 0.5vw 0.5vw;
 }
 
@@ -62,33 +69,34 @@
 
 .nav h4 {
     font-size: 1vw;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
-.content{
+.content {
     height: calc(100% - 10vh);
     width: 100%;
     display: flex;
     position: relative;
 }
 
-.left{
+.left {
     height: 100%;
     width: 55%;
     padding: 5vw 4vw;
-    
+
 }
 
-.left h1{
+.left h1 {
     font-size: 5vw;
     line-height: 4.4vw;
 
 }
 
-.left h1 span{
+.left h1 span {
     color: orange;
 }
-.left p{
+
+.left p {
     font-size: 1.3vw;
     font-weight: 600;
     color: #666;
@@ -96,7 +104,8 @@
     margin-top: 3vw;
     margin-bottom: 4vw;
 }
-.left button{
+
+.left button {
     font-size: 1.5vw;
     padding: 1.3vw 2.3vw;
     background-color: orange;
@@ -105,7 +114,8 @@
     border-radius: 5px;
     font-weight: 700;
 }
-.right{
+
+.right {
     height: 100%;
     width: 45%;
 }
@@ -131,6 +141,6 @@
 
     .nav-menu {
         gap: 3vw;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 }
