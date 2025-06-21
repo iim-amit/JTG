@@ -1,0 +1,86 @@
+.project-section {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.project-section p {
+    margin: 1rem 0 1.75rem 0 !important;
+}
+
+.project-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #fff !important;
+    border: 1px solid #0000000D;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 48vh;
+    width: 23rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-card-content {
+    padding: 15px;
+}
+
+.project-card-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.project-card-content p {
+    color: #666;
+    margin: 0 0 15px;
+}
+
+.project-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0 15px 15px;
+}
+
+.project-card-tags span {
+    background: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 8px !important;
+    color: #2B2B2B;
+    background-color: #fff;
+}
+
+.card-description {
+    margin: 0px !important;
+    padding: 0 1rem;
+    color: #767676;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: left !important;
+    background-color: #fff;
+}
