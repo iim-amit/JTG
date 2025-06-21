@@ -133,8 +133,8 @@ body {
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .logos-row {
@@ -159,19 +159,19 @@ body {
 }
 
 .footer-block {
-  flex: 1 1 200px;
+  flex: 1;
   margin: 0px;
-  gap: 100vw;
 }
 .footer-block.logo-ratings {
   padding-left: 2px;
-  margin-right: 220px;
+  flex: 2;
 }
 
 .footer-block h4 {
-  font-weight: bold;
   margin-bottom: 10px;
   margin-top: 120px;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .footer-block ul {
@@ -182,7 +182,9 @@ body {
 
 .footer-block ul li {
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .logo-ratings .logo-and-ratings {
@@ -221,7 +223,9 @@ body {
 }
 
 .rating-item p {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #767676;
   margin: 0;
 }
 
@@ -238,7 +242,6 @@ body {
 
 .footer-bottom {
   text-align: center;
-  /* padding-top: 15px 0; */
   font-size: 14px;
   color: #888;
 }
