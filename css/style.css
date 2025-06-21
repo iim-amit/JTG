@@ -41,14 +41,13 @@ body {
     left: 0;
     height: 10vh;
     width: 100%;
-    border-bottom: 2px solid #dadada;
+    box-shadow: 4px 0px 10px 0px #2F7AF91A;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4vw;
     background-color: white;
     z-index: 1000;
-    overflow-x: auto;
 }
 
 .nav-logo img {
@@ -77,6 +76,8 @@ body {
     width: 100%;
     display: flex;
     position: relative;
+    background-color: #fff;
+    margin-bottom: 3.5rem;
 }
 
 .left {
