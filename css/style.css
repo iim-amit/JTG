@@ -475,7 +475,6 @@ body {
   }
 
   .right img{
-    border: 2px solid red;
     padding: 0;
     height: 75%;
     object-fit: contain;
