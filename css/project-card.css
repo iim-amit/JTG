@@ -1,6 +1,7 @@
 .project-section {
     max-width: 90vw;
     margin: 0 auto;
+    margin-top: 3rem;
     text-align: center;
 }
 
@@ -84,3 +85,30 @@
     text-align: left !important;
     background-color: #fff;
 }
+
+@media (max-width: 1024px) {
+    .project-card {
+        width: 30%; /* Three cards per row */
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media (max-width: 768px) {
+    .project-card {
+        width: 48%; /* Two cards per row */
+    }
+}
+/* Mobile (320px - 480px) */
+@media (max-width: 480px) {
+    .project-card {
+        width: 100%; /* Full width for single-column layout */
+        min-height: auto; /* Allow height to adjust naturally */
+    }
+    .project-section {
+        max-width: 95vw;
+    }
+}
+
+
+
+/* Small Screens/Laptops (769px - 1024px) */

@@ -219,3 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Form submitted successfully!');
   });
 });
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('menu-open');
+});
