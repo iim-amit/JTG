@@ -1,3 +1,13 @@
+document.getElementById('hamburger').addEventListener('click', function() {
+  const navMenu = document.getElementById('navMenu');
+  // Toggle between 'block' and 'none'
+  if (navMenu.style.display === 'block') {
+    navMenu.style.display = 'none';
+  } else {
+    navMenu.style.display = 'block';
+  }
+});
+
 function loadProjectCards() {
   fetch('./html/project-card.html')
     .then(res => res.text())
