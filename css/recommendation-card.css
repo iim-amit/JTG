@@ -11,9 +11,8 @@
 }
 
 .slick-track{
-     display: flex !important;
+    display: flex !important;
     gap: 1.5rem !important;
-    flex-wrap: wrap !important;
     margin-bottom: 1.5rem !important;
 }
 

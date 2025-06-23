@@ -139,6 +139,13 @@ function loadRecommendationCards() {
           {
             breakpoint: 768,
             settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
               slidesToShow: 1,
               slidesToScroll: 1
             }
@@ -207,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadRecommendationCards();
   loadContactCards();
 
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
+  document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
     console.log('Form submitted successfully!');
   });
