@@ -6,10 +6,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    
 }
+
+
 
 body {
   background-color: #F0F0F6;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .card-tags {
@@ -55,11 +60,26 @@ body {
   cursor: pointer;
 }
 
-.nav-logo img {
+ .nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80%;
-  width: 90%;
   padding: 0.5vw 0.5vw;
 }
+
+.nav-logo img {
+  max-height: 8vh;
+  width: auto;
+  padding: 0.5vw;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+.nav-logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
 
 .nav-menu {
   display: flex;
@@ -77,6 +97,12 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 
 .nav h2 {
   font-size: 2vw;
