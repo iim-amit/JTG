@@ -113,6 +113,11 @@ body {
   font-size: 1vw;
   white-space: nowrap;
 }
+.nav-menu a:hover {
+  background-color: #ffc107;
+  padding: 5px;
+  border-radius: 2.5px;
+}
 
 .content {
   height: 84vh;
@@ -126,13 +131,15 @@ body {
 .left {
   height: 100%;
   /* width: 40%; */
+  width: 55%;
   flex: 1;
   padding: 5vw 4vw;
 }
 
 .left h1 {
-  font-size: 3rem;
-  line-height: 4.4vw;
+  font-size: 2.75vw;
+  line-height: 3.4vw;
+  
 
 }
 
@@ -162,6 +169,7 @@ body {
 .right {
   height: 100%;
   /* width: 60%; */
+  width: 45%;
   flex: 2;
 }
 
@@ -169,6 +177,50 @@ body {
   height: 100%;
   width: 100%;
   padding: 4rem 1rem 1rem 1rem;
+}
+/* Shapes */
+.shape {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  max-width: 100%;
+}
+
+/* Decorative Elements */
+.ellipse1 {
+  bottom: 10rem;
+  left: 100px;
+  width: 20px;
+}
+
+.ellipse2 {
+  top: 8rem;
+  left: 30px;
+  width: 20px;
+}
+
+.ellipse3 {
+  top: 11rem;
+  right: 42%;
+  width: 20px;
+}
+
+.rectangle1 {
+  bottom: 13rem;
+  left: 40%;
+  width: 22px;
+}
+
+.rectangle2 {
+  top: 14rem;
+  right: 140px;
+  width: 23px;
+}
+
+.polygon {
+  bottom: 9rem;
+  right: 110px;
+  width: 20px;
 }
 
 /* footer */
